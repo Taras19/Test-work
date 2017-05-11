@@ -1,0 +1,375 @@
+@font-face {
+    font-family: vijaya,TimesNewRomanRegular; /* Гарнитура шрифта */
+    src: url(fonts/vijaya.ttf),url(fonts/TimesNewRomanRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family:TimesNewRoman; /* Гарнитура шрифта */
+    src:url(fonts/TimesNewRomanRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family:Tahoma; /* Гарнитура шрифта */
+    src:url(fonts/Tahoma.ttf); /* Путь к файлу со шрифтом */
+   }
+body{
+	padding:0;
+	margin:0;
+}
+.main-container{
+	padding-left:77px;
+	background-color:#000000;
+	position:relative;
+	min-height:200px;
+}
+.nav-xs,
+.menu-button{
+	display:none;
+}
+.nav{
+	list-style:none;
+	padding:0;
+	position:fixed;
+	top:0;
+	left:0;
+	width:77px;
+	z-index:100;
+}
+.nav li{
+	border-bottom:1px solid #000000;
+	padding-bottom:2px;
+}
+.nav li a{
+	display:block;
+	height:77px;
+	background-image:url("img/menu-icon-1.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100% 100%;
+}
+
+.nav .li-active,
+.nav li:hover{
+		border-bottom:1px solid #CA0505;
+	}
+
+.nav li .icon-2{
+	background-image:url("img/menu-icon-2.jpg");
+}
+.nav li .icon-3{
+	background-image:url("img/menu-icon-3.jpg");
+}
+
+.electronic-minds{
+	padding:1.92% 6.03% 4.94%;
+	background-image:url("img/electronic-minds-bg.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.logo{
+	font-family: Tahoma;
+	font-size:35px;
+	color:#ffffff;
+	font-weight:bold;
+	margin:0 0 5.93%;
+}
+.logo span{
+	font-size:16px;
+	font-weight:normal;
+}
+h1{
+	font-family:"Times New Roman";
+	font-size:60px;
+	color:#ffffff;
+	margin:0 0 4.05%;
+}
+.electronic-minds p{
+	width:53%;
+	font-family:vijaya;
+	font-size:30px;
+	color:#ffffff;
+	margin:0 0 4.05%;
+}
+.sed-ut-btn{
+	display:inline-block;
+	color:#ffffff;
+	font-family: Tahoma;
+	font-size:24px;
+	padding:20px 25px;
+	text-decoration:none;
+	border:2px solid #999999;
+	
+}
+.sed-ut-btn:hover{
+	border-color:#EC6C6C;
+}
+.info{
+	padding:4.38% 15.90%;
+	background-color:#ffffff;
+}
+.info p{
+	font-family:Tahoma;
+	font-size:24px;
+}
+.icon-block{
+	width:25%;
+	float:left;
+	text-align:center;
+}
+.icon-block img{
+	max-width:100%;
+}
+
+.icon-block h3{
+	font-size:30px;
+	margin:0 0 20px;
+}
+.icon-block p{
+	font-size:22px;
+	font-style:italic;
+	margin:0 0 10px;
+}
+.clearfix{
+	clear:both;
+}
+.clearfix-media{
+	display:none;
+}
+.footer{
+	padding:0 19.75%;
+	background-color:#ffffff;
+}
+.footer-container{
+	position:relative;
+	border-top:2px solid #999999;
+	padding:4.48% 0;
+	text-align:center;
+	font-size:14px;
+	
+}
+.footer-container a{
+	text-decoration:none;
+	margin:0 40px;
+	color:#000000;
+}
+.footer-container .what-is-btn{
+	background-color:#666699;
+	padding:15px 25px;
+	color:#ffffff;
+	text-decoration:none;
+	position:absolute;
+	bottom:10%;
+	white-space:nowrap;
+	margin:0 15px 0 13%;
+	
+}
+.footer-container .what-is-btn:hover{
+	color:#666699;
+	background-color:#ffffff;
+	border:1px solid #666699;
+}
+@media (min-width:800px) and (max-width:1100px){
+	h1{
+		font-size:50px;
+	}
+	.electronic-minds p {
+    	width: 70%;
+    }
+    .info {
+    	padding: 4.38% 6.03%;
+    }
+	.footer {
+    	padding: 0 6.03%;
+    }
+	.footer-container {
+		position:static;
+	}
+	
+	.footer-container .what-is-btn {
+        margin: 0;
+        bottom:-15px;
+        right:-160px;
+        padding:10px 20px;
+        transform-origin:0 50%;
+        transform:rotate(-90deg);
+	}
+
+}
+@media (min-width:640px) and (max-width:799px){
+	h1{
+		font-size:50px;
+	}
+	.electronic-minds p {
+    	width: 80%;
+    }
+    .info {
+    	padding: 4.38% 6.03%;
+    }
+    .icon-block {
+    	width:50%;
+    }
+	.footer {
+    	padding: 0 6.03%;
+    }
+	.footer-container {
+		position:static;
+	}
+	
+	.footer-container .what-is-btn {
+        margin: 0;
+        bottom:-10px;
+        right:-165px;
+        padding:5px 20px;
+        transform-origin:0 50%;
+        transform:rotate(-90deg);
+	}
+
+}
+@media (max-width:639px){
+	.clearfix-media{
+		display:block;
+	}
+	.electronic-minds{
+		background-image:none;
+		background-color:#336666;
+	}
+	h1{
+		font-size:40px;
+	}
+	.electronic-minds p {
+    	width: 100%;
+    }
+    .info {
+    	padding: 4.38% 6.03%;
+    }
+    .icon-block {
+    	width:50%;
+    }
+    .footer {
+    	padding: 0 6.03%;
+    }
+    .footer-container {
+		position:relative;
+		text-align:left;
+	}
+	.footer-container span{
+		display:block;
+	}
+	.footer-container a{
+		display:block;
+		margin:10px 0;
+	}
+
+	
+	.footer-container .what-is-btn {
+        display:inline-block;
+        position:static;
+        float:right;
+        margin:10px 0 0;
+        right:0;
+        padding:5px 20px;
+        
+	}
+}
+@media (max-width:479px){
+	.main-container {
+    	padding: 0;
+	   
+	}
+	.nav-xs{
+		display:block;
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		padding:10px 0;
+		background-color:#000000;
+	}
+	.display {
+		position:absolute;
+		top:0;
+		left:10px;
+		height:52px;
+		width:52px;
+	}
+	.menu-button{
+		display:block;
+		position:relative;
+		float:right;
+		margin-right:30px;
+		width:32px;
+		height:32px;
+		background:transparent;
+		border:none;
+		overflow:hidden;
+		padding:0;
+		}
+	.menu-button:focus{
+		outline:none;
+	}
+	.line{
+		width:100%;
+		height:4px;
+		background:#F0FFF0;
+		position:absolute;
+		border:1px solid #000000;
+		}
+	.top-line{
+		top:4px;
+		left:0;
+		transition:.3s;
+	}
+	.middle-line{
+		top:50%;
+		left:0;
+		margin-top:-3px;
+		transition:.3s;
+	
+	}
+	.bottom-line{
+		bottom:4px;
+		left:0;
+		transition:.3s;
+	}
+	.menu-button-open{}
+	.menu-button-open .top-line{
+		top:-3px;
+		width:50px;
+		transform-origin:0 2px;
+		transform:rotate(45deg);
+	}
+	.menu-button-open .middle-line{
+		transform:scale(0);
+	}
+	.menu-button-open .bottom-line{
+		bottom:-3px;
+		width:50px;
+		transform-origin:0 2px;
+		transform:rotate(-45deg);
+	}
+	.nav {
+		top:51px;
+       	width:100%;
+    	background-color:#000000;
+    	margin:0;
+    	height:0;
+    	overflow:hidden;
+    	transition:.3s;
+	}
+	.nav-open{
+		height:241px;
+		transition:.3s;
+	}
+	
+	.nav li a{
+		width:77px;
+		margin:auto;
+	}
+	.electronic-minds {
+    	padding: 70px 6.03% 4.94%;
+
+	}
+    .icon-block {
+    	width:100%;
+    }
+    
+}
