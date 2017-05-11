@@ -50,14 +50,14 @@ function timer(){
             }
         else if(scrollTop>electronicMindsHeight && scrollTop<(infoHeight+electronicMindsHeight-windowHeight)){
             display.src="img/menu-icon-2.jpg";
-                for(var k=0;k<linkNav.length;k++){
+                for( k=0;k<linkNav.length;k++){
                     linkNav[k].classList.remove("li-active"); 
                     }
                 document.querySelector(".li--icon-2").classList.add("li-active");
             }
         else if(scrollTop>(infoHeight+electronicMindsHeight-windowHeight)){
                 display.src="img/menu-icon-3.jpg";
-                    for(var k=0;k<linkNav.length;k++){
+                    for( k=0;k<linkNav.length;k++){
                        linkNav[k].classList.remove("li-active"); 
                     }
                 document.querySelector(".li--icon-3").classList.add("li-active");
