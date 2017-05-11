@@ -1,14 +1,14 @@
 @font-face {
-    font-family: vijaya,TimesNewRomanRegular; /* Гарнитура шрифта */
-    src: url(fonts/vijaya.ttf),url(fonts/TimesNewRomanRegular.ttf); /* Путь к файлу со шрифтом */
+    font-family: vijaya; 
+    src: url(fonts/vijaya.ttf); 
    }
 @font-face {
-    font-family:TimesNewRoman; /* Гарнитура шрифта */
-    src:url(fonts/TimesNewRomanRegular.ttf); /* Путь к файлу со шрифтом */
+    font-family:TimesNewRoman;
+    src:url(fonts/TimesNewRoman.ttf); 
    }
 @font-face {
-    font-family:Tahoma; /* Гарнитура шрифта */
-    src:url(fonts/Tahoma.ttf); /* Путь к файлу со шрифтом */
+    font-family:Tahoma; 
+    src:url(fonts/Tahoma.ttf);
    }
 body{
 	padding:0;
@@ -261,7 +261,6 @@ h1{
 
 	
 	.footer-container .what-is-btn {
-        display:inline-block;
         position:static;
         float:right;
         margin:10px 0 0;
